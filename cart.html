@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <style>
+      body{
+        background-color:rgb(15, 87, 87);
+      }
+      #cart{
+        height:200px;
+        width:100%;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:5px;
+        border:2px solid red;
+      }
+      #cart>div{
+        height:350px;
+        width:100%;
+        border-radius:15px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        background-color:antiquewhite;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+         border:2px solid green;
+      }
+      img{
+        width:60%;
+        height:50%;
+      }
+       #check>a{
+           text-decoration:none;
+           background-color: antiquewhite;
+           color:black;
+           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+       }
+       button{
+        background-color: antiquewhite;
+           color:black;
+           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+       }
+
+    </style>
+  </head>
+  <body>
+    <button id="check"><a href="./checkout.html">checkout</a> </button>
+    <h2 id="cart_total">
+      <!-- Cart total price in cart.html H2 tag with Id :- “cart_total” -->
+      <!-- Mention only price, don't add any extra text, only number should be present -->
+    </h2>
+
+    <!-- - Append the items in local storage to a div with Id :- “cart”
+         - Each item should have remove button with class : “remove”
+         - Checkout Button Id :- “checkout” -->
+         <div id="cart"></div>
+  </body>
+</html>
+<script src="./scripts/cart.js"></script>

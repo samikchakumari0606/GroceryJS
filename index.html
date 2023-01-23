@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <style>
+      #navbar{
+        height:50px;
+        width:100%;
+      
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        gap: 10px;
+        border-radius:15px;
+        background-color: rgb(233, 233, 14);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      }
+      #navbar>div{
+        height:80%;
+        width:100px;
+        
+        border-radius:15px;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        background-color:antiquewhite;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        
+      }
+      #items{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        gap:10px;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        
+      }
+      #items>div{
+       
+        border-radius:15px;
+        margin-top:1ch;
+        background-color:rgb(15, 87, 87);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      }
+      img{
+        width:60%;
+        height:50%;
+        margin-top:10px;
+      }
+       button{
+        height:35px;
+        width:100px;
+        border-radius:15px;
+      }
+      #go_to_cart>a{
+      text-decoration: none;
+      background-color:antiquewhite;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <div>login</div>
+      <div>Sign-Up</div>
+      <div>Items</div>
+      <!-- - Navbar should have cart link with Id :- “go_to_cart” -->
+      <!-- - Count div Id :- “item_count” -->
+      <!-- item_count should contain only number do not add any extra text -->
+      <div id="go_to_cart" ><a href="./cart.html">add to cart</a></div>
+      <div id="item_count">0</div>
+
+
+      </div>
+
+      <div id="items">
+      <!-- - Append the items inside div with Id : “items”
+      - Item card will have class : "item"
+      - Add to cart button with class :- “add_to_cart” -->
+    </div>
+  </body>
+</html>
+<script src="./scripts/index.js"></script>
+
